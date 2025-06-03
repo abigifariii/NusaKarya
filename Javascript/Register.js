@@ -54,10 +54,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     if (validateForm()) {
       alert("Account created successfully!");
-      window.location.href = "../Home.html";
+      window.location.href = "Home.html";
     }
   });
-   
+
   form.addEventListener("input", function (e) {
     const target = e.target;
 
