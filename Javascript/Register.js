@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
       window.location.href = "../Home.html";
     }
   });
-
+   
   form.addEventListener("input", function (e) {
     const target = e.target;
 
