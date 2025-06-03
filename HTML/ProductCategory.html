@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Category</title>
+    <link rel="stylesheet" href="../CSS/ProductCategory.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="navbar">
+      <button class="hamburger" aria-label="Mobile Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="logo">
+        <h1>NusaKarya</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./Home.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="./Product.html">Produk</a>
+            <ul class="dropdown-menu">
+              <li><a href="./ProductCategory.html">Kerajinan Hias</a></li>
+              <li><a href="./ProductCategory.html">Kerajinan Pakaian</a></li>
+              <li><a href="./ProductCategory.html">Kerajinan Mainan</a></li>
+              <li><a href="./ProductCategory.html">Kerajinan Rumah Tangga</a></li>
+            </ul>
+          </li>
+          <li><a href="./Article.html">Artikel</a></li>
+          <li><a href="./AboutUs.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <div class="cart-dropdown">
+          <a href="#" class="cart-icon" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="cart-dropdown-content">
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+              <p>Total: <span class="cart-total">Rp0</span></p>
+              <button class="checkout-btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="sign-in"><a href="">Sign In</a></button>
+        <button class="sign-up"><a href="./Register.html">Sign Up</a></button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide active">
+              <img src="../asset/promo.png" alt="Promo 1" />
+            </div>
+            <div class="slide">
+              <img src="../asset/promo2.png" alt="Promo 2" />
+            </div>
+            <div class="slide">
+              <img src="../asset/promo3.png" alt="Promo 3" />
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button class="prev-slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="next-slide"><i class="fas fa-chevron-right"></i></button>
+          </div>
+          <div class="slider-dots"></div>
+        </div>
+      </section>
+      <div class="product">
+        <div class="section-title">
+          <h2>Top Sellers</h2>
+          <a href="#" class="view-more">View More</a>
+        </div>
+        <div class="products-grid">
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/sweater.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Minimalism</p>
+                <h3 class="product-name">Sweater Rajut</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>5.0 (41 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp185.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/batik roso solo.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Batik Roso Solo</p>
+                <h3 class="product-name">Kemeja Batik</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.5 (86 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp270.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/outer.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Tenun Uma Nusa</p>
+                <h3 class="product-name">Outer Tenun</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.8 (68 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp370.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/jaket.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Langit Craft</p>
+                <h3 class="product-name">Jaket Jeans</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.9 (59 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp220.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-title">
+          <h2>Produk Baru</h2>
+          <a href="./ProductCategory.html" class="view-more">View More</a>
+        </div>
+        <div class="products-grid">
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/rok.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Griya Batik Larasati</p>
+                <h3 class="product-name">Rok Panjang Batik</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>5.0 (41 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp250.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/kaos.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Seni Kaos Jogja</p>
+                <h3 class="product-name">Kaos Handmade Lukis</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.5 (86 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp180.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/piyaman.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Bunga Tidur Handmade</p>
+                <h3 class="product-name">Piyama Katun</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.8 (68 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp110.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/kemeja lurik.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Lurik Jawa</p>
+                <h3 class="product-name">Kemeja Lurik Pria Kasual</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.9 (59 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp185.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-title">
+          <h2>Sedang Diskon</h2>
+          <a href="./ProductCategory.html" class="view-more">View More</a>
+        </div>
+        <div class="products-grid">
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/syal.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Benang Waktu</p>
+                <h3 class="product-name">Syal Rajut</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>5.0 (41 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp160.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/kebaya.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Warisan Ibu</p>
+                <h3 class="product-name">Kebaya Encim Bordir Klasik</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.5 (86 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp320.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/kulot.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Laras Etnik</p>
+                <h3 class="product-name">Kulot Tenun</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.8 (68 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp240.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/perca.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">EcoWear Studio</p>
+                <h3 class="product-name">Hoodie Patchwork Perca</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.9 (59 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp85.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-title">
+          <h2>Fashion Pria</h2>
+          <a href="./ProductCategory.html" class="view-more">View More</a>
+        </div>
+        <div class="products-grid">
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/shirt2.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Minimalism</p>
+                <h3 class="product-name">Kemeja Rajut</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>5.0 (41 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp285.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/rompi.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">NTT Wear</p>
+                <h3 class="product-name">Rompi Tenun</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <i class="fas fa-star-half-alt"></i>
+                  <span>4.5 (86 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp145.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/gelang kulit.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">KulitNusantara</p>
+                <h3 class="product-name">Gelang Kulit</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.8 (68 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp35.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/tisu.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Sarung Karya</p>
+                <h3 class="product-name">Sarung Pria Etnik Modern</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.9 (59 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp125.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+
+        <div class="section-title">
+          <h2>Fashion Wanita</h2>
+          <a href="./ProductCategory.html" class="view-more">View More</a>
+        </div>
+        <div class="products-grid">
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/kimono.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Taru Etnik</p>
+                <h3 class="product-name">Kimono Outer Tenun Bali</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>5.0 (41 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp280.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/rok lilit.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Srikandi Kain</p>
+                <h3 class="product-name">Rok Lilit Jumputan Modern</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.5 (86 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp120.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/cardigan.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Rajut Rasa</p>
+                <h3 class="product-name">Cardigan Rajut Tribal Warm</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.8 (68 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp250.000</p>
+              </div>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <div class="product-image">
+                <img src="../asset/tunik.png" alt="" />
+              </div>
+              <div class="product-info">
+                <p class="product-brand">Jumput Berkain</p>
+                <h3 class="product-name">Tunik Jumputan “Cahaya Pagi”</h3>
+                <div class="product-rating">
+                  <img src="../asset/star.png" alt="" />
+                  <span>4.9 (59 Ulasan)</span>
+                </div>
+                <p class="product-price">Rp250.000</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Tentang Kami</h4>
+          <ul>
+            <li><a href="./AboutUs.html">Tentang NusaKarya</a></li>
+            <li><a href="./AboutUs.html">Misi & Visi</a></li>
+            <li><a href="./AboutUs.html">Kategori Produk</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Dekorasi Rumah</h4>
+          <ul>
+            <li><a href="#">Batik & Kain Tradisional</a></li>
+            <li><a href="#">Mainan Edukasi</a></li>
+            <li><a href="#">Aromaterapi & Sabun</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Hak Cipta</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Bankuan & Panduan</h4>
+          <ul>
+            <li><a href="#">Cara Berbelanja</a></li>
+            <li><a href="#">Cara Menjadi Pengrajin / Berjualan</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Caro Pembayaran</a></li>
+            <li><a href="#">Kebijakan Pengiriman & Pengembalian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Ikuti Kami</h4>
+          <div class="social-media">
+            <img src="../asset/instagram.png" alt="" />
+            <img src="../asset/twitter.png" alt="" />
+            <img src="../asset/pinterest.png" alt="" />
+            <img src="../asset/facebook.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <h2>NusaKarya</h2>
+          <p>Karya Lokal, Cinta Nasional</p>
+        </div>
+        <p>&copy; 2025 NusaKarya. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="../Javascript/ProductCategory.js"></script>
+  </body>
+</html>

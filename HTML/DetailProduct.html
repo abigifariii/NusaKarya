@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NusaKarya Detail Product</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="../CSS/DetailProduct.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- navbar -->
+    <header class="navbar">
+      <button class="hamburger" aria-label="Mobile Menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      <div class="logo">
+        <h1>NusaKarya</h1>
+      </div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="./Home.html">Beranda</a></li>
+          <li class="dropdown">
+            <a href="./Product.html">Produk <i class="fas fa-chevron-down dropdown-icon"></i></a>
+            <ul class="dropdown-menu">
+              <li><a href="./ProductCategory.html">Kerajinan Hias</a></li>
+              <li><a href="./ProductCategory.html">Kerajinan Pakaian</a></li>
+              <li><a href="./ProductCategory.html">Kerajinan Mainan</a></li>
+              <li><a href="./ProductCategory.html">Kerajinan Rumah Tangga</a></li>
+            </ul>
+          </li>
+          <li><a href="./Article.html">Artikel</a></li>
+          <li><a href="./AboutUs.html">Tentang Kami</a></li>
+        </ul>
+      </nav>
+      <div class="auth-buttons">
+        <div class="cart-dropdown">
+          <a href="#" class="cart-icon" aria-label="Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <div class="cart-dropdown-content">
+            <div class="cart-items"></div>
+            <div class="cart-summary">
+              <p>Total: <span class="cart-total">Rp0</span></p>
+              <button class="checkout-btn">Checkout</button>
+            </div>
+          </div>
+        </div>
+
+        <button class="sign-in"><a href="">Sign In</a></button>
+        <button class="sign-up"><a href="./Register.html">Sign Up</a></button>
+      </div>
+    </header>
+
+    <main class="main-container">
+      <section class="product-section">
+        <div class="product-gallery">
+          <img alt="Man wearing green knitted sweater" class="main-image" src="../asset/sweater.png" />
+          <div class="thumbnail-container">
+            <img alt="Thumbnail of man wearing green knitted sweater front view" class="thumbnail" src="../asset/sweater.png" />
+            <img alt="Thumbnail of man wearing green knitted sweater side view" class="thumbnail" src="../asset/sweater1.png" />
+            <img alt="Thumbnail of man wearing green knitted sweater smiling" class="thumbnail" src="../asset/sweater2.png" />
+            <img alt="Thumbnail of man wearing green knitted sweater looking down" class="thumbnail" src="../asset/sweater3.png" />
+          </div>
+        </div>
+        <div class="product-details">
+          <div class="product-header">
+            <h2>Sweater Rajut</h2>
+            <p class="price">Rp185.000</p>
+            <p class="sold">Terjual 3rb+</p>
+          </div>
+
+          <div class="size-selector">
+            <label>Select Size</label>
+            <div class="size-options">
+              <button class="size-btn">S</button>
+              <button class="size-btn">M</button>
+              <button class="size-btn">L</button>
+              <button class="size-btn">XL</button>
+              <button class="size-btn">XXL</button>
+            </div>
+          </div>
+
+          <div class="action-buttons">
+            <button class="btn-cart">
+              <i class="fas fa-shopping-cart"></i>
+              Keranjang
+            </button>
+            <button class="btn-buy">Beli Langsung</button>
+          </div>
+
+          <div class="product-description">
+            <h3>Deskripsi Produk</h3>
+            <p>
+              Nikmati Kehangatan Dan Gaya Kasual Elegan Dengan Sweater Rajut Pilis Berwarna Hijau Botol Dari Koleksi Minimalism. Dibuat Secara Handmade Oleh Pengrajin Lokal, Sweater Ini Menggunakan Benang Premium Pilihan Yang Lembut, Tebal,
+              Dan Tidak Mudah Melar.
+            </p>
+          </div>
+
+          <div class="product-details-info">
+            <h3>Detail Produk</h3>
+            <ul>
+              <li>Bahan: Benang Katun Rajut Tebal (Premium)</li>
+              <li>Warna: Hijau Botol</li>
+              <li>Model: Regular Fit, Lengan Panjang, Leher V</li>
+              <li>Ukuran: Tersedia M, L, XL</li>
+              <li>Cocok Untuk: Cuaca Dingin, Gaya Kasual, Semi-Formal</li>
+              <li>Perawatan: Cuci Tangan Disarankan, Jangan Direndam Langsung Di Bawah Matahari</li>
+              <li>Desain Minimalis Yang Stylish Dan Timeless, Cocok Untuk Kamu Yang Ingin Tampil Hangat Tanpa Ribet.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews-section">
+        <div class="rating-card">
+          <div class="rating-header">
+            <p>Rating & Reviews</p>
+          </div>
+          <div class="rating-details">
+            <div class="rating-total">
+              <div class="rating-score">4,5</div>
+              <div class="rating-count">4,5 (86 Ulasan)</div>
+            </div>
+            <div class="rating-bars">
+              <div class="rating-bar">
+                <i class="fas fa-star"></i>
+                <span>5</span>
+                <div class="bar full"></div>
+              </div>
+              <div class="rating-bar">
+                <i class="fas fa-star"></i>
+                <span>4</span>
+                <div class="bar empty"></div>
+              </div>
+              <div class="rating-bar">
+                <i class="fas fa-star"></i>
+                <span>3</span>
+                <div class="bar empty"></div>
+              </div>
+              <div class="rating-bar">
+                <i class="fas fa-star"></i>
+                <span>2</span>
+                <div class="bar empty"></div>
+              </div>
+              <div class="rating-bar">
+                <i class="fas fa-star"></i>
+                <span>1</span>
+                <div class="bar empty"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="review-card">
+          <img alt="User profile photo of Steven Junior" class="review-avatar" src="https://storage.googleapis.com/a1aa/image/c5110050-af53-4d8b-dbf1-2a70eea15164.jpg" />
+          <div class="review-content">
+            <div class="review-header">
+              <span>Steven Junior</span>
+              <span class="review-date">10 Des 2024</span>
+            </div>
+            <p class="review-text">"Sweater-nya tebal, hangat, dan nyaman banget dipakai! Pas banget untuk cuaca Bandung yang dingin. Petanannya juga rapi dan ukurannya pas. Terima kasih!"</p>
+            <button class="comment-btn">Beri Komentar</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="similar-products">
+        <h3>Produk Serupa</h3>
+        <div class="product-grid">
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <img alt="Man wearing blue jeans jacket" class="product-image" src="../asset/jaket.png" />
+              <p class="product-brand">Longs Craft</p>
+              <p class="product-name">Jaket Jeans</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(26 ulasan)</span>
+              </div>
+              <p class="product-price">Rp220.000</p>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <img alt="Man wearing black batik shirt" class="product-image" src="../asset/kemeja lurik.png" />
+              <p class="product-brand">Lurik Jawa</p>
+              <p class="product-name">Kemeja Lurik Pria Kasual</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(15 ulasan)</span>
+              </div>
+              <p class="product-price">Rp275.000</p>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <img alt="Man wearing black batik kimono style shirt" class="product-image" src="../asset/batik roso solo.png" />
+              <p class="product-brand">Batik Riau Satu</p>
+              <p class="product-name">Kemeja Batik</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(37 ulasan)</span>
+              </div>
+              <p class="product-price">Rp270.000</p>
+            </div>
+          </a>
+
+          <a href="./DetailProduct.html">
+            <div class="product-card">
+              <img alt="Woman wearing beige coat and scarf" class="product-image" src="../asset/syal.png" />
+              <p class="product-brand">Dewang Waktu</p>
+              <p class="product-name">Syal Rajut</p>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(7 ulasan)</span>
+              </div>
+              <p class="product-price">Rp160.000</p>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Tentang Kami</h4>
+          <ul>
+            <li><a href="./AboutUs.html">Tentang NusaKarya</a></li>
+            <li><a href="./AboutUs.html">Misi & Visi</a></li>
+            <li><a href="./AboutUs.html">Kategori Produk</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Dekorasi Rumah</h4>
+          <ul>
+            <li><a href="#">Batik & Kain Tradisional</a></li>
+            <li><a href="#">Mainan Edukasi</a></li>
+            <li><a href="#">Aromaterapi & Sabun</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Syarat & Ketentuan</a></li>
+            <li><a href="#">Kebijakan Privasi</a></li>
+            <li><a href="#">Hak Cipta</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Bankuan & Panduan</h4>
+          <ul>
+            <li><a href="#">Cara Berbelanja</a></li>
+            <li><a href="#">Cara Menjadi Pengrajin / Berjualan</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Caro Pembayaran</a></li>
+            <li><a href="#">Kebijakan Pengiriman & Pengembalian</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-section">
+          <h4>Ikuti Kami</h4>
+          <div class="social-media">
+            <img src="../asset/instagram.png" alt="" />
+            <img src="../asset/twitter.png" alt="" />
+            <img src="../asset/pinterest.png" alt="" />
+            <img src="../asset/facebook.png" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-logo">
+          <h2>NusaKarya</h2>
+          <p>Karya Lokal, Cinta Nasional</p>
+        </div>
+        <p>&copy; 2025 NusaKarya. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <div class="popup-notification" id="popupNotification">
+      <i class="fas fa-check-circle"></i>
+      <div class="popup-content">
+        <div class="popup-title">Berhasil!</div>
+        <div class="popup-message" id="popupMessage">Produk telah ditambahkan ke keranjang</div>
+      </div>
+    </div>
+
+    <div class="comment-modal" id="commentModal">
+      <div class="comment-modal-content">
+        <div class="comment-modal-header">
+          <h3>Tulis Komentar</h3>
+          <button class="close-comment-modal">&times;</button>
+        </div>
+        <textarea class="comment-textarea" placeholder="Tulis komentar Anda tentang produk ini..."></textarea>
+        <button class="submit-comment-btn">Kirim Komentar</button>
+      </div>
+    </div>
+
+    <script src="../Javascript/DetailProduct.js"></script>
+  </body>
+</html>
